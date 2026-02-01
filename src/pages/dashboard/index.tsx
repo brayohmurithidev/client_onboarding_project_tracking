@@ -88,17 +88,17 @@ export function DashboardPage() {
           <h1 className="text-2xl font-bold tracking-tight sm:text-3xl">Dashboard</h1>
           <p className="text-sm text-muted-foreground sm:text-base">Overview of your projects and clients</p>
         </div>
-        <div className="flex flex-col gap-2 sm:flex-row">
-          <Button asChild size="sm" className="sm:size-default">
+        <div className="grid grid-cols-2 gap-3 sm:flex sm:flex-row">
+          <Button asChild size="sm" className="w-full sm:w-auto sm:size-default">
             <Link to="/clients/new">
               <Plus className="mr-2 h-4 w-4" />
-              <span className="sm:inline">New Client</span>
+              <span>New Client</span>
             </Link>
           </Button>
-          <Button asChild size="sm" className="sm:size-default">
+          <Button asChild size="sm" className="w-full sm:w-auto sm:size-default">
             <Link to="/projects/new">
               <Plus className="mr-2 h-4 w-4" />
-              <span className="sm:inline">New Project</span>
+              <span>New Project</span>
             </Link>
           </Button>
         </div>
@@ -230,7 +230,7 @@ export function DashboardPage() {
                       {project.client.name} • {project.client.company || "No company"}
                     </p>
                     {project.description && (
-                      <div 
+                      <div
                         className="prose prose-sm max-w-none text-xs text-muted-foreground line-clamp-1"
                         dangerouslySetInnerHTML={{ __html: project.description }}
                       />
