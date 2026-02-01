@@ -38,7 +38,7 @@ interface SidebarContentProps {
 function SidebarContent({ isActive, handleSignOut, setMobileMenuOpen }: SidebarContentProps) {
   return (
     <>
-      <div className="flex h-16 items-center border-b px-6">
+      <div className="flex h-16 items-center border-b pl-16 pr-6 md:px-6">
         <h1 className="text-xl font-bold text-primary">Project Tracker</h1>
       </div>
 
