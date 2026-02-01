@@ -21,7 +21,7 @@ export function Topbar() {
         <h2 className="hidden text-base font-semibold sm:block sm:text-lg">Welcome back!</h2>
       </div>
 
-      <div className="flex flex-1 items-center justify-center sm:justify-start md:max-w-md">
+      <div className="flex flex-1 items-center px-2 sm:px-0 sm:justify-start md:max-w-md">
         <GlobalSearch />
       </div>
 
